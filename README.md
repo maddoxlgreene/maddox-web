@@ -15,7 +15,7 @@ I'm always open to discussing new projects, interesting ideas, or opportunities.
 
 * **Twitter:** https://twitter.com/maddoxlgreene
 
-* **Personal Website (Optional):** https://maddoxgreene.tech
+* **Personal Website:** https://maddoxgreene.tech
 
 ## 🙏 Thanks for Visiting!
 
