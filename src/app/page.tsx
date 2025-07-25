@@ -70,7 +70,7 @@ const Portfolio = () => {
   useEffect(() => {
     const animate = () => {
       setCarouselOffset(prev => {
-        const newOffset = prev - 0.6; // Good speed for all devices
+        const newOffset = prev - 1; // Good speed for all devices
         // Reset when we've scrolled through one set of items
         const itemWidth = 320; // 288px card + 32px margin
         const totalWidth = itemWidth * collaborations.length;
@@ -99,9 +99,9 @@ const Portfolio = () => {
   ];
   
   const certifications = [
-    { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational cybersecurity skills and hands-on labs", color: "blue", icon: Shield, link: "https://www.coursera.org/account/accomplishments/professional-cert/0YX3AL97IABH" },
-    { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical troubleshooting and customer support", color: "pink", icon: Server, link: "https://www.coursera.org/account/accomplishments/specialization/9CV36SAW0PHI" },
-    { title: "In Progress", subtitle: "Security+ & CISSP", desc: "Advanced cybersecurity certifications", color: "gray", icon: Lock, link: "#" }
+    { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational cybersecurity skills and hands-on labs", color: "blue", icon: Shield },
+    { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical troubleshooting and customer support", color: "pink", icon: Server },
+    { title: "In Progress", subtitle: "Security+ & CISSP", desc: "Advanced cybersecurity certifications", color: "gray", icon: Lock }
   ];
 
   const FloatingSpheres = () => (
@@ -336,6 +336,7 @@ const Portfolio = () => {
                     <div className="relative w-12 h-12 flex items-center justify-center bg-gray-800/50 rounded">
                       <img 
                         src={collab.imgSrc} 
+                        alt={`${collab.name} logo`} 
                         width="48"
                         height="48"
                         className="max-w-full max-h-full object-contain opacity-80"
@@ -395,7 +396,7 @@ const Portfolio = () => {
                   `}
                 >
                   <GlassCard className="p-8 text-center h-full">
-                  <div onClick={window.open(`${cert.link}`, '_blank')} className="relative z-10">
+                  <div className="relative z-10">
                     <div className="mb-6 flex flex-col items-center">
                       <div className={`
                         w-20 h-20 mx-auto rounded-2xl flex items-center justify-center
