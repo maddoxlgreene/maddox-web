@@ -9,7 +9,7 @@ I am a cyber security professional with a strong interest in customer service, i
 
 I'm always open to discussing new projects, interesting ideas, or opportunities. Feel free to reach out!
 
-* **LinkedIn:** \[Your LinkedIn Profile URL\]
+* **LinkedIn:** https://www.linkedin.com/in/maddox-g-a759aa338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
 
 * **Email:** business@maddoxgreene.tech
 
