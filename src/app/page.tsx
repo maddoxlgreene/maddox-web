@@ -101,7 +101,7 @@ const Portfolio = () => {
   const certifications = [
     { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational cybersecurity skills and hands-on labs", color: "blue", icon: Shield, link: "https://www.coursera.org/account/accomplishments/professional-cert/0YX3AL97IABH" },
     { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical troubleshooting and customer support", color: "pink", icon: Server, link: "https://www.coursera.org/account/accomplishments/specialization/9CV36SAW0PHI" },
-    { title: "In Progress", subtitle: "Security+ & CISSP", desc: "Advanced cybersecurity certifications", color: "gray", icon: Lock, }
+    { title: "In Progress", subtitle: "Security+ & CISSP", desc: "Advanced cybersecurity certifications", color: "gray", icon: Lock, link: "#" }
   ];
 
   const FloatingSpheres = () => (
@@ -394,8 +394,8 @@ const Portfolio = () => {
                     relative rounded-2xl
                   `}
                 >
-                  <GlassCard onClick={window.open(`${cert.link}`, '_blank')} className="p-8 text-center h-full">
-                  <div className="relative z-10">
+                  <GlassCard className="p-8 text-center h-full">
+                  <div onClick={window.open(`${cert.link}`, '_blank')} className="relative z-10">
                     <div className="mb-6 flex flex-col items-center">
                       <div className={`
                         w-20 h-20 mx-auto rounded-2xl flex items-center justify-center
