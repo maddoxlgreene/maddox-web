@@ -99,9 +99,9 @@ const Portfolio = () => {
   ];
   
   const certifications = [
-    { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational cybersecurity skills and hands-on labs", color: "blue", icon: Shield },
-    { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical troubleshooting and customer support", color: "pink", icon: Server },
-    { title: "In Progress", subtitle: "Security+ & CISSP", desc: "Advanced cybersecurity certifications", color: "gray", icon: Lock }
+    { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational cybersecurity skills and hands-on labs", color: "blue", icon: Shield, link: "https://www.coursera.org/account/accomplishments/professional-cert/0YX3AL97IABH" },
+    { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical troubleshooting and customer support", color: "pink", icon: Server, link: "https://www.coursera.org/account/accomplishments/specialization/9CV36SAW0PHI" },
+    { title: "In Progress", subtitle: "Security+ & CISSP", desc: "Advanced cybersecurity certifications", color: "gray", icon: Lock, }
   ];
 
   const FloatingSpheres = () => (
@@ -348,9 +348,6 @@ const Portfolio = () => {
                           console.log(`Successfully loaded: ${collab.imgSrc}`);
                         }}
                       />
-                      <span className="text-xs text-gray-400 absolute inset-0 flex items-center justify-center opacity-50">
-                        {collab.name.slice(0, 2)}
-                      </span>
                     </div>
                     <span className="text-xl font-semibold text-white">{collab.name}</span>
                   </div>
@@ -397,7 +394,7 @@ const Portfolio = () => {
                     relative rounded-2xl
                   `}
                 >
-                  <GlassCard className="p-8 text-center h-full">
+                  <GlassCard onClick={window.open(`${cert.link}`, '_blank')} className="p-8 text-center h-full">
                   <div className="relative z-10">
                     <div className="mb-6 flex flex-col items-center">
                       <div className={`
