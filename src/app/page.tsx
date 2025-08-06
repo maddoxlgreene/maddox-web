@@ -94,7 +94,7 @@ const Portfolio = () => {
   const journey = [
     { period: "Present", title: "Customer Experience Manager", company: "Leading CX Operations", description: "Spearheading customer experience initiatives, managing cross-functional teams, and implementing data-driven improvements.", type: "work", technologies: ["Team Leadership", "Data Analytics", "Process Optimization"] },
     { period: "2024 - Present", title: "Bachelor's in Information System Security", company: "University Studies", description: "Pursuing specialized education in cybersecurity, focusing on advanced threat analysis, digital forensics, and security architecture.", type: "education", technologies: ["Digital Forensics", "Cryptography", "Incident Response"] },
-    { period: "2023 - Present", title: "Penetration Tester", company: "Cybersecurity Consulting", description: "Conducting security assessments for Fortune 500 companies, identifying critical vulnerabilities, and providing actionable remediation.", type: "work", technologies: ["OWASP", "Burp Suite", "Metasploit", "Nessus"] },
+    { period: "2023 - Present", title: "Penetration Tester", company: "Cybersecurity Consulting", description: "Conducting security assessments for startup enterprises, identifying critical vulnerabilities, and providing actionable remediation.", type: "work", technologies: ["OWASP", "Burp Suite", "Metasploit", "Nessus"] },
     { period: "2022 - Present", title: "System Administrator", company: "Enterprise IT Operations", description: "Managing hybrid cloud infrastructure for 10,000+ users, implementing automation, and maintaining 99.9% uptime.", type: "work", technologies: ["AWS", "Docker", "Kubernetes", "Ansible"] },
   ];
   
@@ -464,7 +464,7 @@ const Portfolio = () => {
             <div className="flex justify-center space-x-6">
               {[
                 { href: "https://www.linkedin.com/in/maddox-g-a759aa338", icon: Linkedin, color: "hover:text-blue-400" },
-                { href: "https://github.com/conflexed", icon: Github, color: "hover:text-white" },
+                { href: "https://github.com/maddoxlgreene", icon: Github, color: "hover:text-white" },
                 { href: "mailto:business@maddoxgreene.tech", icon: Mail, color: "hover:text-pink-400" },
                 { href: "https://buymeacoffee.com/realconflexed", icon: Coffee, color: "hover:text-yellow-400" }
               ].map(({ href, icon: Icon, color }) => (
