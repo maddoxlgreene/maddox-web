@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import {
   Shield, Mail, Github, Linkedin, Coffee,
-  ArrowRight, Briefcase, GraduationCap, Server, Lock
+  ArrowRight, Briefcase, GraduationCap, Server, Lock, Origami
 } from 'lucide-react';
 
 interface Sphere {
@@ -34,7 +34,7 @@ const Portfolio = () => {
   const animationRef = useRef<number | null>(null);
 
   const collaborations = [
-    { name: 'Auraside', imgSrc: '/Auraside.jpg' },
+    { name: 'AuraSide', imgSrc: '/Auraside.jpg' },
     { name: 'Hone', imgSrc: '/Hone.jpg' },
     { name: 'Ghast', imgSrc: '/Ghast.jpg' },
     { name: 'DuelSet', imgSrc: '/duelset_logo.jpg' },
@@ -99,9 +99,10 @@ const Portfolio = () => {
   ];
   
   const certifications = [
-    { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational cybersecurity skills and hands-on labs", color: "blue", icon: Shield },
-    { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical troubleshooting and customer support", color: "pink", icon: Server },
-    { title: "In Progress", subtitle: "Security+ & CISSP", desc: "Advanced cybersecurity certifications", color: "gray", icon: Lock }
+    { title: "CS50X Cyber Security", subtitle: "Professional Certificate", desc: "Harvard University's Cybersecurity Course", color: "blue", icon: Origami },
+    { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational Cybersecurity Skills and Hands-on Labs", color: "blue", icon: Shield },
+    { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical Troubleshooting and Customer Support", color: "pink", icon: Server },
+    { title: "In Progress", subtitle: "Security+", desc: "System Security Architecture and Design", color: "gray", icon: Lock }
   ];
 
   const FloatingSpheres = () => (
@@ -371,7 +372,7 @@ const Portfolio = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {certifications.map((cert) => {
               const gradientClass = cert.color === 'blue' 
                 ? 'from-blue-500 to-cyan-500' 
