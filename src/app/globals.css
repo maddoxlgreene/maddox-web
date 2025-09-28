@@ -34,3 +34,19 @@ body {
 .animate-scroll {
   animation: scroll 40s linear infinite;
 }
+
+@layer utilities {
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+  }
+
+  /* Optional: Utility class to pause animation on hover */
+  .pause-animation {
+    animation-play-state: paused;
+  }
+}
