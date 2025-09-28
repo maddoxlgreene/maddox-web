@@ -1,7 +1,6 @@
 import React from 'react';
 import { Linkedin, Github, Mail, Coffee } from 'lucide-react';
 
-// An array to hold your social link data for easier management
 const socialLinks = [
   { href: "https://www.linkedin.com/in/maddox-g-a759aa338", icon: Linkedin, color: "hover:text-blue-400" },
   { href: "https://github.com/maddoxlgreene", icon: Github, color: "hover:text-white" },

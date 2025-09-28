@@ -1,5 +1,5 @@
 import React from 'react';
-import GradientText from '../GradientText'; // Make sure this path is correct
+import GradientText from '../GradientText';
 
 const navItems = ["About", "Journey", "Work", "Certifications", "Contact"];
 
