@@ -17,7 +17,7 @@ export const journey: JourneyItem[] = [
 ];
 
 export const certifications = [
-    { title: "CS50X Cyber Security Certificate", subtitle: "Professional Certificate", desc: "Harvard University's Cybersecurity Course", color: "red", icon: Origami },
+    { title: "CS50x Cyber Security Certificate", subtitle: "Professional Certificate", desc: "Harvard University's Cybersecurity Course", color: "red", icon: Origami },
     { title: "Google Cybersecurity Certificate", subtitle: "Professional Certificate", desc: "Foundational Cybersecurity Skills and Hands-on Labs", color: "blue", icon: Shield },
     { title: "Google IT Support Certificate", subtitle: "Professional Certificate", desc: "Technical Troubleshooting and Customer Support", color: "pink", icon: Server },
     { title: "In Progress", subtitle: "Security+", desc: "System Security Architecture and Design", color: "gray", icon: Lock }
